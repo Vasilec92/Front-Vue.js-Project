@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/afdc7aa636.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="cart">
+          <search-form></search-form>
+          <cart ref="cart"></cart>
+        </div>
+      </header>
+
+      <section class="product-box center">
+        <div class="promo__content">
+          <h1 class="promo__heading">THE BRAND</h1>
+          <p class="promo__text">
+            OF LUXERIOUS <span class="promo__text_red">FASHION</span>
+          </p>
+        </div>
+        <p class="product-box__text">
+          Shop for items based on what we featured in this week
+        </p>
+        <products ref="products"></products>
+        </div>
+      </section>
+      <section class="avantage center">
+        <div class="avantage__block">
+          <img src="img/car.svg" alt="" class="avantage__img" />
+          <h3 class="avantage__title">Free Delivery</h3>
+          <p class="avantage__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="avantage__block">
+          <img src="img/percentage.svg" alt="" class="avantage__img" />
+          <h3 class="avantage__title">Sales & discounts</h3>
+          <p class="avantage__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="avantage__block">
+          <img src="img/crown.svg" alt="" class="avantage__img" />
+          <h3 class="avantage__title">Quality assurance</h3>
+          <p class="avantage__text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__top center">
+          <div class="comments">
+            <div class="comments__block">
+              <img src="img/face.png" alt="" class="comments__img" />
+              <p class="comments_text">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </p>
+            </div>
+          </div>
+          <div class="subscribe">
+            <p class="subscribe__title">SUBSCRIBE</p>
+            <p class="subscribe__text">FOR OUR NEWLETTER AND PROMOTION</p>
+            <div class="subscribe__form">
+              <input
+                class="subscribe__input"
+                type="email"
+                placeholder="Enter Your Email"
+                name=""
+                id=""
+              />
+              <button class="subscribe__btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__button center">
+          <p class="copyright">© 2021 Brand All Rights Reserved.</p>
+          <div class="footer__icons">
+            <a href="" class="footer__icon-link"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="" class="footer__icon-link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="" class="footer__icon-link"
+              ><i class="fab fa-pinterest-p"></i
+            ></a>
+            <a href="" class="footer__icon-link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="js/CartComp.js"></script>
+      <script src="js/ProducComp.js"></script>
+      <script src="js/SearchComp.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
