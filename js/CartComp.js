@@ -37,12 +37,13 @@ Vue.component('cart', {
 
 
         },
-        mounted() {
-            localStorage.getItem("carts") ? this.cartItems = JSON.parse(localStorage.getItem("carts")) : localStorage.setItem("carts", {});
-        },
-
-
     },
+    mounted() {
+        localStorage.getItem("carts") ? this.cartItems = JSON.parse(localStorage.getItem("carts")) : localStorage.setItem("carts", {});
+    },
+
+
+
     template: `
         <div>
             <div class="btn-cart" type="button" @click="showCart=!showCart">
